@@ -1,0 +1,48 @@
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.navLinks {
+  display: flex;
+  list-style: none;
+  margin-right: 12rem;
+  font-size: 20px;
+}
+
+.navLinks li {
+  padding: 0 2rem;
+}
+
+.link {
+  color: rgb(9, 10, 10);
+  text-decoration: none;
+}
+
+.link:hover {
+  color: rgb(17, 45, 172);
+}
+
+.links {
+  border-right: 5px solid rgb(20, 16, 16);
+}
+
+.logo {
+  color: rgb(10, 10, 10);
+  font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    font-size: 1.3rem;
+  }
+
+  .link:hover {
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+}
