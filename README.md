@@ -176,7 +176,7 @@ Feel free to check the [issues page](../../issues/).
 ## ⭐️ Show your support <a name="support"></a>
 
 
-If you like this project...
+if you like the project, give it a star ⭐️ 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
