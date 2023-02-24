@@ -33,7 +33,7 @@
 - [📝 License](#license)
 
 
-# 📖<a name="about-project">Math magicians</a>
+# 📖<a name="about-project">Bookstore</a>
 
 > "Bookstore"  is a website that allows users to add and remove a book, and display a the list of books added on the page
 <details>
