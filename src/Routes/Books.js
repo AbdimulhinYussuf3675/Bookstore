@@ -1,31 +1,22 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 import Book from 'components/Book';
-import Form from 'components/Form';
+import BookForm from 'components/Form';
 
-function Books() {
+const BooksList = () => {
+  const books = useSelector((state) => state.books);
   return (
-    <>
-      <ul>
-        <Book
-          title="Kidagaa Kimemwozea"
-          author="Ken Walibora"
-        />
-        <Book
-          title="The River And The Source"
-          author="Margret Ogola"
-        />
-        <Book
-          title="The River Between"
-          author="Ngũgĩ wa Thiong'o"
-        />
-        <Book
-          title="Kiu"
-          author="Mohamed S. Mohamen"
-        />
+    <article className="bookslist-container">
+      <ul className="bookslist">
+        {books.map((book) => (
+          <li key={book.id}>
+            <Book book={book} />
+          </li>
+        ))}
       </ul>
-      <Form />
-    </>
+      <BookForm />
+    </article>
   );
-}
+};
 
-export default Books;
+export default BooksList;
