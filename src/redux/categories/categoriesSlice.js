@@ -4,7 +4,7 @@ const categorySlice = createSlice({
   name: 'categories',
   initialState: [],
   reducers: {
-    checkStatus: () => 'Sorry the following page is not redy for production',
+    checkStatus: () => 'Kindly the following page is Under development',
   },
 });
 
