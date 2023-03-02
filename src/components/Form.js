@@ -48,8 +48,8 @@ const BookForm = () => {
         />
         <select ref={categoryInput}>
           <option value="Action">Action</option>
-          <option value="Productivity">Productivity</option>
-          <option value="Sci-Fi">Sci-Fi</option>
+          <option value="Documentary">Documentary</option>
+          <option value="Drama">Drama</option>
           <option value="Biography">Biography</option>
         </select>
         <button type="submit" className="add-btn">
