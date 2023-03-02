@@ -2,23 +2,17 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from 'styles/Nav.module.css';
 
-const Nav = () => (
+const Navbar = () => (
   <nav className={styles.navBar}>
-    <h1 className={styles.logo}>Book Store</h1>
+    <h1 className={styles.logo}>Bookstore Store</h1>
     <ul className={styles.navLinks}>
       <li className={styles.links}>
-        <Link
-          className={styles.link}
-          to="/"
-        >
+        <Link to="/" className={styles.link}>
           Books
         </Link>
       </li>
-      <li className={styles.links}>
-        <Link
-          className={styles.link}
-          to="/categories"
-        >
+      <li>
+        <Link to="/categories" className={styles.link}>
           Categories
         </Link>
       </li>
@@ -26,4 +20,4 @@ const Nav = () => (
   </nav>
 );
 
-export default Nav;
+export default Navbar;
