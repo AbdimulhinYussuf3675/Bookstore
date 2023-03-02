@@ -1,28 +1,13 @@
 import { createSlice } from '@reduxjs/toolkit';
 
-const initialState = {
-  categories: [],
-};
-
-const categoriesSlice = createSlice({
+const categorySlice = createSlice({
   name: 'categories',
-  initialState,
+  initialState: [],
   reducers: {
-    checkStatus: (state) => {
-      if (state.categories.length === 0) {
-        return {
-          ...state,
-          categories: [...state.categories, 'Under Construction'],
-        };
-      }
-      return {
-        ...state,
-        categories: state.categories,
-      };
-    },
+    checkStatus: () => 'Sorry the following page is not redy for production',
   },
 });
 
-export const { checkStatus } = categoriesSlice.actions;
-
-export default categoriesSlice.reducer;
+const { actions, reducer } = categorySlice;
+export const { checkStatus } = actions;
+export default reducer;
