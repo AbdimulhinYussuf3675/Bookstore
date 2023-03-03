@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import BooksList from 'Routes/Books';
 import Navbar from './components/Nav';
 import Categories from './Routes/Categories';
+import './styles/App.css';
 
 const App = () => (
   <div className="app">
