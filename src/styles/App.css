@@ -4,8 +4,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-
-  /* background-color: #fafafa; */
 }
 
 :root {
@@ -17,13 +15,11 @@
 }
 
 body {
-  /* background-color: #fafafa; */
   font-family: 'Montserrat', sans-serif;
   background-color: #f4f5f9;
 }
 
 #root {
-  /* background-color: #f4f5f9; */
   width: 90%;
   margin: 5rem auto;
 }
@@ -93,7 +89,6 @@ nav {
   transform: scale(1.1);
 }
 
-/* Commons  */
 article {
   width: 100%;
   min-height: 80vh;
@@ -102,7 +97,6 @@ article {
   align-items: center;
 }
 
-/* Bookslist  */
 .bookslist-container {
   background-color: #fafafa;
 }
@@ -241,9 +235,6 @@ article {
   background-color: var(--skyblue);
 }
 
-
-
-/* Progress circle  */
 .progress-bar {
   --value: 64;
 
