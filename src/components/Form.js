@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import { useDispatch } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
+import styles from 'styles/Form.module.css';
 import { createBook } from '../redux/book/booksSlice';
 
 const makeNewBook = (title, author, category) => ({
@@ -36,9 +37,9 @@ const BookForm = () => {
     }
   };
   return (
-    <div className="form-container">
+    <div className={styles.formContainer}>
       <h2>Add New Book</h2>
-      <form className="book-form" onSubmit={handleSubmit}>
+      <form className={styles.bookForm} onSubmit={handleSubmit}>
         <input ref={titleInput} type="text" placeholder="Book title" required />
         <input
           ref={authorInput}
@@ -52,7 +53,7 @@ const BookForm = () => {
           <option value="Drama">Drama</option>
           <option value="Biography">Biography</option>
         </select>
-        <button type="submit" className="add-btn">
+        <button type="submit" className={styles.addBtn}>
           Add Book
         </button>
       </form>
