@@ -1,13 +1,13 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
-import { removeBook } from '../redux/book/booksSlice';
+import { deleteBook } from 'redux/book/booksSlice';
 
-const Buttons = ({ id }) => {
+const ButtonGroup = ({ id }) => {
   const dispatch = useDispatch();
 
   const handleRemove = () => {
-    dispatch(removeBook({ id }));
+    dispatch(deleteBook(id));
   };
   return (
     <div className="btn-group">
@@ -22,8 +22,8 @@ const Buttons = ({ id }) => {
   );
 };
 
-Buttons.propTypes = {
+ButtonGroup.propTypes = {
   id: PropTypes.string.isRequired,
 };
 
-export default Buttons;
+export default ButtonGroup;
